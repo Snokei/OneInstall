@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Snokei/OneIntall.git"
+    "url": "https://github.com/Snokei/OneInstall.git"
   },
   "author": "Snokei",
   "description": "OneInstall package installer",
@@ -57,7 +57,7 @@
     "vite": "^8.1.1"
   },
   "build": {
-    "appId": "com.packageinstaller.app",
+    "appId": "com.snokei.oneinstall",
     "productName": "OneInstall",
     "publish": [
       {
