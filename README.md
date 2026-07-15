@@ -4,41 +4,70 @@
   <img src="build/icon.ico" alt="OneInstall Logo" width="120"/>
 </p>
 
+<h1 align="center">OneInstall</h1>
+
 <p align="center">
-  <strong>A modern Windows package installer built with Electron and React.</strong>
+  <strong>A modern Windows package manager built with Electron, React and Winget.</strong>
 </p>
 
 <p align="center">
-  Install your favorite software in one click using the Windows Package Manager (Winget).
+  Search, discover and install Windows applications with a beautiful and intuitive interface.
+</p>
+
+<p align="center">
+
+![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%26%2011-0078D6?style=for-the-badge)
+![Electron](https://img.shields.io/badge/Electron-43-blue?style=for-the-badge)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 </p>
 
 ---
 
 ## ✨ Features
 
-- 🚀 One-click software installation
-- 🔍 Search thousands of applications
-- ⭐ Save favorite apps
+- 🚀 Install Windows applications in one click
+- 🔍 Fast package search powered by Winget
+- ⭐ Save your favorite applications
 - 📦 Install multiple applications
-- 🎨 Modern and responsive UI
-- ⚡ Powered by Winget
+- ⚡ Lightweight and fast
+- 🎨 Modern UI built with React
+- 🌓 Light & Dark theme
 - 💻 Windows 10 & Windows 11 support
-- 🌓 Light & Dark theme support
 - 🔄 Easy software management
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-> [Add screenshots here](https://prnt.sc/T449L4b1CDBj)
+# 📸 Screenshots
 
-| Home | Search | Favorites |
-|------|--------|-----------|
-| ![](https://prnt.sc/T449L4b1CDBj) | ![](docs/search.png) | ![](docs/favorites.png) |
+## 🏠 Home
+
+<p align="center">
+  <img src="assets/home.png" alt="OneInstall Home" width="1000">
+</p>
 
 ---
 
-## 🛠️ Built With
+## 🔍 Search
+
+<p align="center">
+  <img src="assets/search.png" alt="OneInstall Search" width="1000">
+</p>
+
+---
+
+## 📦 Installation
+
+<p align="center">
+  <img src="assets/install.png" alt="OneInstall Installation" width="1000">
+</p>
+---
+
+## 🛠 Built With
 
 - Electron
 - React 19
@@ -50,30 +79,37 @@
 
 ---
 
-## 📥 Installation
+## 🚀 Getting Started
 
-Download the latest release from the Releases page.
-
-https://github.com/Snokei/OneInstall/releases/latest
-
-Or clone the repository.
+### Clone the repository
 
 ```bash
 git clone https://github.com/Snokei/OneInstall.git
 cd OneInstall
+```
+
+### Install dependencies
+
+```bash
 npm install
 ```
 
-Run in development mode:
+### Start development
 
 ```bash
 npm run electron:dev
 ```
 
-Build the application:
+### Build production
 
 ```bash
 npm run dist
+```
+
+The generated installer will be available in:
+
+```
+release/
 ```
 
 ---
@@ -89,12 +125,24 @@ npm run dist
 ## 📁 Project Structure
 
 ```
-.
+OneInstall
+│
+├── build/
 ├── dist/
 ├── dist-electron/
+├── electron/
 ├── public/
 ├── src/
-├── build/
+│   ├── assets/
+│   ├── components/
+│   ├── data/
+│   ├── hooks/
+│   ├── layouts/
+│   ├── pages/
+│   ├── store/
+│   ├── SVG/
+│   └── App.tsx
+│
 ├── package.json
 └── README.md
 ```
@@ -103,16 +151,16 @@ npm run dist
 
 ## 🚀 Roadmap
 
-- [x] Search packages
-- [x] Install software
-- [x] Favorites
-- [ ] Update installed software
-- [ ] Uninstall software
-- [ ] Export/Import favorite lists
-- [ ] Package categories
-- [ ] Application ratings
-- [ ] Auto updates
-- [ ] Multi-language support
+- ✅ Search applications
+- ✅ Install applications
+- ✅ Favorites
+- ✅ Modern UI
+- ⏳ Update installed software
+- ⏳ Uninstall software
+- ⏳ Categories
+- ⏳ Export / Import favorites
+- ⏳ Automatic updates
+- ⏳ Multi-language support
 
 ---
 
@@ -120,34 +168,38 @@ npm run dist
 
 Contributions are welcome!
 
-1. Fork the repository
-2. Create your feature branch
-
 ```bash
-git checkout -b feature/AmazingFeature
+# Fork the repository
+
+# Create a branch
+git checkout -b feature/my-feature
+
+# Commit your changes
+git commit -m "Add new feature"
+
+# Push
+git push origin feature/my-feature
 ```
 
-3. Commit your changes
-
-```bash
-git commit -m "Add AmazingFeature"
-```
-
-4. Push to the branch
-
-```bash
-git push origin feature/AmazingFeature
-```
-
-5. Open a Pull Request
+Finally, open a Pull Request.
 
 ---
 
-## 🐛 Issues
+## 🐞 Bug Reports
 
-If you encounter any bugs or have feature requests, please create an issue.
+Found a bug?
+
+Please open an issue:
 
 https://github.com/Snokei/OneInstall/issues
+
+---
+
+## ⭐ Support
+
+If you like this project, please consider giving it a ⭐ on GitHub.
+
+It helps the project grow and motivates future development.
 
 ---
 
@@ -157,16 +209,14 @@ This project is licensed under the MIT License.
 
 ---
 
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub.
-
-It helps others discover the project and motivates future development.
-
----
-
 ## 👨‍💻 Author
 
 **Neel**
 
 GitHub: https://github.com/Snokei
+
+---
+
+<p align="center">
+Made with ❤️ using Electron + React
+</p>
