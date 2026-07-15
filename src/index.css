@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent-theme);
+  --color-accent-foreground: var(--accent-theme-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border-theme);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+
+  --font-sans: var(--sans);
+  --font-mono: var(--mono);
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+
+:root {
+  /* Vercel Light Mode Colors */
+  --background: #ffffff;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+  --secondary: #fafafa;
+  --secondary-foreground: #111111;
+  --muted: #fafafa;
+  --muted-foreground: #666666;
+  --accent-theme: #fafafa;
+  --accent-theme-foreground: #000000;
+  --destructive: #ee0000;
+  --border-theme: #eaeaea;
+  --input: #eaeaea;
+  --ring: #000000;
+  --sidebar: #f9fafb;
+
+  /* Legacy variables mapped to Vercel colors */
+  --text: var(--muted-foreground);
+  --text-h: var(--foreground);
+  --bg: var(--background);
+  --border: var(--border-theme);
+  --code-bg: var(--secondary);
+  --accent: var(--primary);
+  --accent-bg: rgba(0, 0, 0, 0.05);
+  --accent-border: rgba(0, 0, 0, 0.1);
+  --social-bg: var(--secondary);
+  --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --glow-white: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.02);
+  --glow-white-md: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.02);
+
+  --sans: Geist, Inter, system-ui, -apple-system, sans-serif;
+  --heading: Geist, Inter, system-ui, -apple-system, sans-serif;
+  --mono: Geist Mono, ui-monospace, SFMono-Regular, monospace;
+
+  font: 16px/1.5 var(--sans);
+  letter-spacing: -0.01em;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Vercel Dark Mode Colors */
+    --background: #000000;
+    --foreground: #ffffff;
+    --card: #0A0A0A;
+    --card-foreground: #ffffff;
+    --popover: #000000;
+    --popover-foreground: #ffffff;
+    --primary: #ffffff;
+    --primary-foreground: #000000;
+    --secondary: #0a0a0a;
+    --secondary-foreground: #ffffff;
+    --muted: #0a0a0a;
+    --muted-foreground: #888888;
+    --accent-theme: #0a0a0a;
+    --accent-theme-foreground: #ffffff;
+    --destructive: #ff3333;
+    --border-theme: #222222;
+    --input: #222222;
+    --ring: #ffffff;
+    --sidebar: #09090b;
+
+    --accent-bg: rgba(255, 255, 255, 0.08);
+    --accent-border: rgba(255, 255, 255, 0.15);
+    --shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.05);
+    --glow-white: 0 0 0 1px rgba(255, 255, 255, 0.03), 0 1px 3px rgba(255, 255, 255, 0.04), 0 4px 12px rgba(255, 255, 255, 0.03);
+    --glow-white-md: 0 0 0 1px rgba(255, 255, 255, 0.04), 0 2px 8px rgba(255, 255, 255, 0.05), 0 8px 24px rgba(255, 255, 255, 0.04);
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-250;
+  }
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 2px 6px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+}

@@ -1,0 +1,381 @@
+[
+  {
+    "id": "google-chrome",
+    "name": "Google Chrome",
+    "wingetId": "Google.Chrome",
+    "category": "Browsers",
+    "description": "Fast, secure, and popular web browser developed by Google.",
+    "publisher": "Google LLC",
+    "icon": "Chrome"
+  },
+  {
+    "id": "mozilla-firefox",
+    "name": "Mozilla Firefox",
+    "wingetId": "Mozilla.Firefox",
+    "category": "Browsers",
+    "description": "Free, open-source web browser focused on privacy and speed.",
+    "publisher": "Mozilla Foundation",
+    "icon": "Globe"
+  },
+  {
+    "id": "brave-browser",
+    "name": "Brave",
+    "wingetId": "Brave.Brave",
+    "category": "Browsers",
+    "description": "Privacy-focused browser that blocks ads and trackers out of the box.",
+    "publisher": "Brave Software Inc.",
+    "icon": "ShieldAlert"
+  },
+  {
+    "id": "opera",
+    "name": "Opera",
+    "wingetId": "Opera.Opera",
+    "category": "Browsers",
+    "description": "Fast, secure web browser with built-in VPN and ad blocker.",
+    "publisher": "Opera Norway AS",
+    "icon": "Compass"
+  },
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "wingetId": "Microsoft.VisualStudioCode",
+    "category": "Editors & IDEs",
+    "description": "Powerful, lightweight code editor developed by Microsoft.",
+    "publisher": "Microsoft Corporation",
+    "icon": "Code"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "wingetId": "Git.Git",
+    "category": "Development",
+    "description": "Free and open-source distributed version control system.",
+    "publisher": "The Git Development Community",
+    "icon": "GitFork"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "wingetId": "OpenJS.NodeJS",
+    "category": "Development",
+    "description": "JavaScript runtime built on Chrome's V8 engine.",
+    "publisher": "OpenJS Foundation",
+    "icon": "Server"
+  },
+  {
+    "id": "python",
+    "name": "Python 3",
+    "wingetId": "Python.Python.3",
+    "category": "Development",
+    "description": "Popular programming language known for readablity and versatility.",
+    "publisher": "Python Software Foundation",
+    "icon": "Terminal"
+  },
+  {
+    "id": "docker-desktop",
+    "name": "Docker Desktop",
+    "wingetId": "Docker.DockerDesktop",
+    "category": "Development",
+    "description": "Fast way to build, run, and share containerized applications.",
+    "publisher": "Docker Inc.",
+    "icon": "Box"
+  },
+
+  {
+    "id": "seven-zip",
+    "name": "7-Zip",
+    "wingetId": "7zip.7zip",
+    "category": "Utilities",
+    "description": "Open-source file archiver with a high compression ratio.",
+    "publisher": "Igor Pavlov",
+    "icon": "FolderArchive"
+  },
+  {
+    "id": "powertoys",
+    "name": "PowerToys",
+    "wingetId": "Microsoft.PowerToys",
+    "category": "Utilities",
+    "description": "Set of utilities for power users to tune and streamline Windows.",
+    "publisher": "Microsoft Corporation",
+    "icon": "Cpu"
+  },
+  {
+    "id": "rufus",
+    "name": "Rufus",
+    "wingetId": "Akeo.Rufus",
+    "category": "Utilities",
+    "description": "Create bootable USB flash drives easily and quickly.",
+    "publisher": "Pete Batard",
+    "icon": "Usb"
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "wingetId": "Discord.Discord",
+    "category": "Communication",
+    "description": "Voice, video, and text chat service for hanging out with friends.",
+    "publisher": "Discord Inc.",
+    "icon": "MessageSquare"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "wingetId": "SlackTechnologies.Slack",
+    "category": "Communication",
+    "description": "Professional team communication and collaboration platform.",
+    "publisher": "Slack Technologies",
+    "icon": "MessagesSquare"
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "wingetId": "Zoom.Zoom",
+    "category": "Communication",
+    "description": "Video conferencing and online meetings platform.",
+    "publisher": "Zoom Video Communications",
+    "icon": "Video"
+  },
+  {
+    "id": "vlc",
+    "name": "VLC Media Player",
+    "wingetId": "VideoLAN.VLC",
+    "category": "Multimedia",
+    "description": "Free, open-source cross-platform multimedia player for all formats.",
+    "publisher": "VideoLAN Organization",
+    "icon": "Play"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "wingetId": "Spotify.Spotify",
+    "category": "Multimedia",
+    "description": "Digital music service giving access to millions of songs.",
+    "publisher": "Spotify AB",
+    "icon": "Music"
+  },
+  {
+    "id": "obs-studio",
+    "name": "OBS Studio",
+    "wingetId": "OBSProject.OBSStudio",
+    "category": "Multimedia",
+    "description": "Free and open-source software for video recording and live streaming.",
+    "publisher": "The OBS Project",
+    "icon": "Tv"
+  },
+  {
+    "id": "audacity",
+    "name": "Audacity",
+    "wingetId": "Audacity.Audacity",
+    "category": "Multimedia",
+    "description": "Easy-to-use, multi-track audio editor and recorder.",
+    "publisher": "The Audacity Team",
+    "icon": "Volume2"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "wingetId": "Figma.Figma",
+    "category": "Design",
+    "description": "Collaborative web-based design and prototyping tool.",
+    "publisher": "Figma Inc.",
+    "icon": "Layers"
+  },
+  {
+    "id": "gimp",
+    "name": "GIMP",
+    "wingetId": "GIMP.GIMP",
+    "category": "Design",
+    "description": "GNU Image Manipulation Program, a free alternative to Photoshop.",
+    "publisher": "The GIMP Team",
+    "icon": "Palette"
+  },
+  {
+    "id": "inkscape",
+    "name": "Inkscape",
+    "wingetId": "Inkscape.Inkscape",
+    "category": "Design",
+    "description": "Professional vector graphics editor for Windows, Mac, and Linux.",
+    "publisher": "Inkscape Project",
+    "icon": "PenTool"
+  },
+  {
+    "id": "blender",
+    "name": "Blender",
+    "wingetId": "Blender.Blender",
+    "category": "Design",
+    "description": "Free and open-source 3D creation suite.",
+    "publisher": "Blender Foundation",
+    "icon": "Image"
+  },
+  {
+    "id": "steam",
+    "name": "Steam",
+    "wingetId": "Valve.Steam",
+    "category": "Gaming",
+    "description": "The ultimate gaming platform for playing, creating, and discussing games.",
+    "publisher": "Valve Corporation",
+    "icon": "Gamepad2"
+  },
+  {
+    "id": "epic-games-launcher",
+    "name": "Epic Games Launcher",
+    "wingetId": "EpicGames.EpicGamesLauncher",
+    "category": "Gaming",
+    "description": "Access amazing PC games and Unreal Engine tools.",
+    "publisher": "Epic Games Inc.",
+    "icon": "Tv2"
+  },
+  {
+    "id": "libreoffice",
+    "name": "LibreOffice",
+    "wingetId": "LibreOffice.LibreOffice",
+    "category": "Productivity",
+    "description": "Powerful office suite, a clean and free successor to MS Office.",
+    "publisher": "The Document Foundation",
+    "icon": "Briefcase"
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "wingetId": "Obsidian.Obsidian",
+    "category": "Productivity",
+    "description": "Powerful and extensible knowledge base that works on local Markdown files.",
+    "publisher": "Dynalist Inc.",
+    "icon": "BookOpen"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "wingetId": "Notion.Notion",
+    "category": "Productivity",
+    "description": "All-in-one workspace for notes, tasks, wikis, and databases.",
+    "publisher": "Notion Labs Inc.",
+    "icon": "ListTodo"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "wingetId": "Anysphere.Cursor",
+    "category": "Editors & IDEs",
+    "description": "AI-first code editor built for pair programming with large language models.",
+    "publisher": "Anysphere Inc.",
+    "icon": "BrainCircuit"
+  },
+  {
+    "id": "antigravity",
+    "name": "Antigravity IDE",
+    "wingetId": "Google.AntigravityIDE",
+    "category": "Editors & IDEs",
+    "description": "AI-powered coding assistant IDE built by Google DeepMind.",
+    "publisher": "Google DeepMind",
+    "icon": "Sparkles"
+  },
+  {
+    "id": "notepad-plus-plus",
+    "name": "Notepad++",
+    "wingetId": "Notepad++.Notepad++",
+    "category": "Editors & IDEs",
+    "description": "Free source code editor and Notepad replacement with syntax highlighting.",
+    "publisher": "Don Ho",
+    "icon": "FileText"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "wingetId": "Ollama.Ollama",
+    "category": "AI",
+    "description": "Get up and running with large language models locally.",
+    "publisher": "Ollama",
+    "icon": "Cpu"
+  },
+  {
+    "id": "lmstudio",
+    "name": "LM Studio",
+    "wingetId": "ElementLabs.LMStudio",
+    "category": "AI",
+    "description": "Discover, download, and run local LLMs.",
+    "publisher": "LM Studio",
+    "icon": "Box"
+  },
+  {
+    "id": "github-desktop",
+    "name": "GitHub Desktop",
+    "wingetId": "GitHub.GitHubDesktop",
+    "category": "Development",
+    "description": "Simple collaboration from your desktop.",
+    "publisher": "GitHub",
+    "icon": "Github"
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "wingetId": "Postman.Postman",
+    "category": "Development",
+    "description": "API platform for building and using APIs.",
+    "publisher": "Postman",
+    "icon": "Send"
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "wingetId": "WhatsApp.WhatsApp",
+    "category": "Messaging",
+    "description": "Simple, reliable, private messaging and calling.",
+    "publisher": "Meta",
+    "icon": "MessageCircle"
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram",
+    "wingetId": "Telegram.TelegramDesktop",
+    "category": "Messaging",
+    "description": "Fast and secure desktop messaging app.",
+    "publisher": "Telegram",
+    "icon": "Send"
+  },
+  {
+    "id": "lightshot",
+    "name": "Lightshot",
+    "wingetId": "Skillbrains.Lightshot",
+    "category": "Utilities",
+    "description": "The fastest way to take a customizable screenshot.",
+    "publisher": "Skillbrains",
+    "icon": "Camera"
+  },
+  {
+    "id": "everything",
+    "name": "Everything",
+    "wingetId": "voidtools.Everything",
+    "category": "Utilities",
+    "description": "Locate files and folders by name instantly.",
+    "publisher": "voidtools",
+    "icon": "Search"
+  },
+  {
+    "id": "termius",
+    "name": "Termius",
+    "wingetId": "Termius.Termius",
+    "category": "Utilities",
+    "description": "SSH client that works on desktop and mobile.",
+    "publisher": "Termius",
+    "icon": "Terminal"
+  },
+  {
+    "id": "winrar",
+    "name": "WinRAR",
+    "wingetId": "RARLab.WinRAR",
+    "category": "Utilities",
+    "description": "Powerful archive manager.",
+    "publisher": "RARLab",
+    "icon": "FileArchive"
+  },
+  {
+    "id": "ubisoft-connect",
+    "name": "Ubisoft Connect",
+    "wingetId": "Ubisoft.Connect",
+    "category": "Gaming",
+    "description": "Ecosystem of player services for Ubisoft games.",
+    "publisher": "Ubisoft",
+    "icon": "Gamepad2"
+  }
+]

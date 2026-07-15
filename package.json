@@ -1,0 +1,79 @@
+{
+  "name": "package-installer",
+  "productName": "OneInstall",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist-electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "electron:build": "vite build --config vite.config.electron.ts",
+    "electron:dev": "concurrently -k \"npm run dev\" \"vite build --config vite.config.electron.ts --watch\" \"wait-on http-get://localhost:5177 dist-electron/main.cjs && cross-env VITE_DEV_SERVER_URL=http://localhost:5177 electron .\"",
+    "dist": "npm run build && npm run electron:build && electron-builder"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.6.0",
+    "@tailwindcss/vite": "^4.3.2",
+    "@tanstack/react-virtual": "^3.14.5",
+    "@thesvg/react": "^3.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "concurrently": "^10.0.3",
+    "cross-env": "^10.1.0",
+    "lucide-react": "^1.23.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "simple-icons": "^16.25.0",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.2",
+    "wait-on": "^9.0.10",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@rolldown/plugin-babel": "^0.2.3",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "electron": "^43.1.0",
+    "electron-builder": "^26.15.3",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.62.0",
+    "vite": "^8.1.1"
+  },
+  "build": {
+    "appId": "com.packageinstaller.app",
+    "productName": "OneInstall",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "msi"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "OneInstall"
+    }
+  }
+}
