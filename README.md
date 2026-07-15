@@ -42,8 +42,6 @@
 
 # 📸 Screenshots
 
-# 📸 Screenshots
-
 ## 🏠 Home
 
 <p align="center">
