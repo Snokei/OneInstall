@@ -34,7 +34,7 @@
 
 | Home | Search | Favorites |
 |------|--------|-----------|
-| ![](docs/home.png) | ![](docs/search.png) | ![](docs/favorites.png) |
+| ![](https://prnt.sc/T449L4b1CDBj) | ![](docs/search.png) | ![](docs/favorites.png) |
 
 ---
 
