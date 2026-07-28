@@ -31,7 +31,7 @@ const TAB_CONTENT: Record<
   }
 > = {
   all: {
-    title: "Install Popular Windows Apps",
+    title: "Install Popular Windows Apps.",
     description:
       "Select the software packages you want to install or update, then click Install Selected. All commands run silently behind the scenes via Windows WinGet.",
     icon: Sparkles,
